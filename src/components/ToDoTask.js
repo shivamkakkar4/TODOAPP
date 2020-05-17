@@ -16,7 +16,7 @@ class ToDoTask extends Component {
           const { dispatch } = value;
           return(
             <div id="taskBody" className="card card-body mt-3 mb-3 form-check py-0">
-              <Link to = {`task/edit/${id}`} style={{textDecoration: 'none',color: 'black'}} className="random">
+              <Link to = {`task/edit/${id}`} style={{textDecoration: 'none',color: 'black'}} className="random" data-toggle="tooltip" data-placement="right" title="Edit Task">
                 <h4 id="taskValue">{task}</h4>
                 <p id="dateandtime">{startDate.substring(1,11)} , {time}</p>
               </Link>
