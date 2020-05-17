@@ -47,7 +47,7 @@ class AddTask extends Component {
       time
     }
 
-    axios.post('http://localhost:8080/http://localhost:5000/insertData',newTask)
+    axios.post('/insertData',newTask)
 
     dispatch({type: 'ADD_TASK',payload: newTask })
 

@@ -37,7 +37,7 @@ export class Provider extends Component {
   }
 
   async componentDidMount() {
-    const res = await axios.post('http://localhost:8080/http://localhost:5000/sendData')
+    const res = await axios.post('/sendData')
     
       this.setState({Tasks: res.data});
   }

@@ -164,10 +164,19 @@ code {
 }
 #deleteButton{
   margin-top: 0.5rem;
+  font-size: 38px;
+  margin-top: 10%;
 }
 
 @media only screen and (min-height: 700px) {
   #listContent{
     height: 46.8rem;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  #deleteButton{
+    margin-top: 1.2rem;
+    font-size: 33px;
   }
 }

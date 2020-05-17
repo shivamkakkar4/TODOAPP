@@ -5,7 +5,7 @@ import axios from 'axios';
 
 class ToDoTask extends Component {
   onDeleteClick = (id, dispatch) => {
-      axios.post("http://localhost:8080/http://localhost:5000/deleteData",{'delTask': id})
+      axios.post("/deleteData",{'delTask': id})
       dispatch({ type: 'DELETE_TASK', payload: id });
   };
   render() {

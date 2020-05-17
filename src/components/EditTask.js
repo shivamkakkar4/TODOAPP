@@ -62,7 +62,7 @@ class EditTask extends Component {
       time
     }
 
-    axios.post('http://localhost:8080/http://localhost:5000/updateData',updTask)
+    axios.post('/updateData',updTask)
     dispatch({type: 'UPDATE_TASK',payload: updTask })
 
     //Clear State
